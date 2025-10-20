@@ -1,0 +1,86 @@
+.dashboard-container {
+  min-height: 100vh;
+  padding: 30px;
+  background-color: #f0f2f5; 
+  color: #333;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #e0e0e0; 
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  color: #500078;
+  font-size: 2em; 
+  margin: 0;
+  font-weight: 600; 
+}
+
+.logout-button {
+  background-color: #ff6b6b; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px; 
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #cc4d4d; 
+  transform: translateY(-2px);
+}
+
+.logout-button i {
+  margin-left: 8px;
+}
+
+.dashboard-content p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px; 
+}
+
+.dashboard-card {
+  background-color: #ffffff;
+  padding: 35px 25px; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); 
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+  border: 1px solid transparent; 
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+  border-color: #6a00ff; 
+}
+
+.dashboard-card i {
+  font-size: 3.5em; 
+  color: #6a00ff;
+  margin-bottom: 15px;
+}
+
+.dashboard-card h2 {
+  font-size: 1.2em; 
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+}

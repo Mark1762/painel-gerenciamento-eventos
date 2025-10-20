@@ -1,0 +1,82 @@
+.sector-manager-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.manager-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.manager-header h1 {
+  color: #500078;
+  margin: 0;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.sector-form {
+  display: grid;                 
+  grid-template-columns: 2fr 1fr 1fr; 
+  gap: 15px;                     
+  align-items: center;         
+}
+
+.sector-form input {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.sector-form .form-buttons {
+  grid-column: 3 / 4;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #ff8c00;
+}
+
+.item-details strong {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.item-details p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.item-actions {
+  display: flex;
+  gap: 10px;
+}

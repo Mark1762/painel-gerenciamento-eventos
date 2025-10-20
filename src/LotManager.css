@@ -1,0 +1,106 @@
+
+.lot-manager-container {
+  max-width: 1000px; 
+  margin: 40px auto;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px; 
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); 
+  padding: 30px; 
+  margin-bottom: 30px;
+}
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.lot-form {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 20px;
+  align-items: center; 
+}
+
+.lot-form select, 
+.lot-form input {
+  padding: 14px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  grid-column: span 1;
+}
+
+.lot-form input[name="name"] {
+  grid-column: span 2;
+}
+
+.lot-form .form-buttons {
+    grid-column: span 2; 
+    display: flex;
+    gap: 15px;
+}
+
+.lot-form select:focus, 
+.lot-form input:focus {
+  outline: none;
+  border-color: #6a00ff;
+  box-shadow: 0 0 0 3px rgba(106, 0, 255, 0.1); 
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  max-height: 400px; 
+  overflow-y: auto;  
+  padding-right: 15px;
+}
+
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 18px;
+  border-radius: 10px;
+  border-left: 5px solid #20c997; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s;
+}
+
+.item-card:hover {
+    background-color: #f0f0f0;
+}
+
+.item-details {
+    flex-grow: 1; 
+    padding-right: 20px;
+}
+.item-actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0; 
+}
+
+
+@media (max-width: 768px) {
+  .lot-form {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .lot-form input[name="name"],
+  .lot-form .form-buttons {
+    grid-column: span 2;
+  }
+}
